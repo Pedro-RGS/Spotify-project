@@ -1,5 +1,5 @@
-import { artistArray } from "../../front-end/src/assets/database/artists.js";
-import { songsArray } from "../../front-end/src/assets/database/songs.js";
+import { artistArray } from "./database/artistArray.js";
+import { songsArray } from "./database/songArray.js";
 import { db } from "../api/connect.js";
 
 const newArtistsArray = artistArray.map((currentArtistObj) => {
@@ -16,5 +16,5 @@ const newSongsArray = songsArray.map((currentSongObj) => {
     return newSongObj;
 })
 
-const respSongs = await db.collection("songs").insertMany(newSongsArray);
-const respArtists = await db.collection("artists").insertMany(newArtistsArray);
+await db.collection("songs").insertMany(newSongsArray);
+await db.collection("artists").insertMany(newArtistsArray);
