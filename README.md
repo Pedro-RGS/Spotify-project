@@ -39,13 +39,9 @@ cd front-end
 npm install
 ```
 
-Nesse ponto da execução você vai precisar de uma conta, cluster e banco de dados no MongoDB, esses passos não serão abordados aqui.
+Nesse ponto da execução você vai precisar de uma conta, cluster e banco de dados no MongoDB, esses passos não estão no escopo desse README.
 
-* Instale o módulo dotenv para usar variáveis de ambiente usando o comando:
-```
-npm install dotenv --save
-```
-* Após isso, crie uma pasta chamada **.env** na raiz da pasta back-end e crie duas variáveis, uma chamada **DB_URI** para que você coloque a string de conexão com o MongoDB e outra chamada **DB_NAME** para que você coloque uma string que representa o nome do seu banco.
+* Crie uma pasta chamada **.env** na raiz da pasta back-end e crie duas variáveis, uma chamada **DB_URI** para que você coloque a string de conexão com o MongoDB e outra chamada **DB_NAME** para que você coloque uma string que representa o nome do seu banco.
 
 * No seu banco de dados crie duas Collections: **songs** e **artists**
 
