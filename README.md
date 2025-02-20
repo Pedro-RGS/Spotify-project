@@ -21,11 +21,13 @@ Para o projeto foram usadas as seguintes tecnologias:
 
 ## Instalação
 
-Lembrando -> Para executar um arquivo .js com NodeJS é preciso usar o seguinte comando no terminal:
+Lembretes
 
+-> Para executar um arquivo .js com NodeJS é preciso usar o seguinte comando no terminal:
 `node <path arquivo>`
-
 Ex. `node ./api/server.js`
+
+-> Para parar processos basta usar o comando `Ctrl + c`
 
 O projeto é composto de duas pastas: Front-end e Back-end. Quando baixado, é necessário instalar os módulos do NodeJS nessas duas pastas, para isso digite no terminal:
 
@@ -47,6 +49,6 @@ npm install dotenv --save
 
 * No seu banco de dados crie duas Collections: **songs** e **artists**
 
-* Execute os arquivos `connect.js` e `populate.js` que estão na pasta back-end para conectar e povoar o banco de dados, respectivamente. Quando o banco estiver devidamente populado, usa `ctrl + C` para parar o processo.
+* Execute os arquivos `connect.js` e `populate.js` que estão na pasta back-end para conectar e povoar o banco de dados, respectivamente. Quando o banco estiver devidamente populado, pare o processo.
 
 * Agora só é preciso executar o arquivo `server.js` da pasta back-end e usar o comando `npm run dev` da pasta front-end. Com o servidor e a interface sendo executados localmente, basta entrar na URL dada pelo Vite e testar o projeto.
