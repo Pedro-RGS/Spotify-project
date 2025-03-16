@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SongItem = ({ image, name, duration, artist, audio, _id, index}) => {
+const SongItem = ({ image, name, duration, artist, audio, _id, index }) => {
   return (
     <Link to={`/song/${_id}`} className="song-item">
       <div className="song-item__number-album">
@@ -15,7 +15,7 @@ const SongItem = ({ image, name, duration, artist, audio, _id, index}) => {
           <p className="song-item__name">{name}</p>
         </div>
       </div>
-      <p>{duration}</p>
+      <p className="song-item__duration">{duration}</p>
     </Link>
   );
 };

@@ -3,18 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const SingleItem = ({_id, name, image, banner, artist, idPath}) => {
+const SingleItem = ({ _id, name, image, banner, artist, idPath }) => {
   return (
     <Link to={`${idPath}/${_id}`} className="single-item">
       <div className="single-item__div-image-button">
         <div className="single-item__div-image">
           <img
-            className="single-item__image"
             src={image}
             alt={`Image do artista ${name}`}
+            className={"single-item__image"}
           />
         </div>
-
         <FontAwesomeIcon className="single-item__icon " icon={faCirclePlay} />
       </div>
 

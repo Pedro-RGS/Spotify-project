@@ -52,7 +52,6 @@ const Player = ({ duration, randonIdFromArtist, audio }) => {
   const durationInSeconds = timeInSeconds(duration);
 
   // useRef é outro tipo de hook do react
-  // 
   const audioPlayer = useRef();
   const progressBar = useRef();
 
@@ -75,13 +74,13 @@ const Player = ({ duration, randonIdFromArtist, audio }) => {
       </div>
 
       <div className="player__progress">
-        <div>{currentTime}</div>
+        <div className="player__time">{currentTime}</div>
 
         <div className="player__bar">
           <div ref={progressBar} className="player__bar-progress"></div>
         </div>
 
-        <div>{duration}</div>
+        <div className="player__time">{duration}</div>
       </div>
 
       <audio ref={audioPlayer} src={audio}></audio>

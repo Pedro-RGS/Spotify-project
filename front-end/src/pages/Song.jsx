@@ -35,7 +35,7 @@ const Song = () => {
 
         <Player randonIdFromArtist={randomIdFromArtist} duration={song.duration} audio={song.audio}/>
 
-        <div>
+        <div className="song__info">
           <p className="song__name">{song.name}</p>
           <p>{songArtist.name}</p>
         </div>
